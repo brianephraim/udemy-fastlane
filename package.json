@@ -1,0 +1,23 @@
+{
+	"name": "UdemyFastlane",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest",
+		"build-without-sim": "xcodebuild clean build CODE_SIGN_IDENTITY=\"\" CODE_SIGNING_REQUIRED=\"NO\" CODE_SIGNING_ENTITLEMENTS=\"\" CODE_SIGNING_ALLOWED=\"NO\" -project ./UdemyFastlane.xcodeproj -configuration Debug -scheme UdemyFastlane"
+	},
+	"dependencies": {
+		"react": "16.1.1",
+		"react-native": "0.50.3"
+	},
+	"devDependencies": {
+		"babel-jest": "21.2.0",
+		"babel-preset-react-native": "4.0.0",
+		"jest": "21.2.1",
+		"react-test-renderer": "16.1.1"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
